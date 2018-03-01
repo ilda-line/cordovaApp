@@ -9,10 +9,10 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
-    "cordova-android": "7.0.0",
+    "cordova-android": "^7.0.0",
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-device": "^2.0.1",
-    "cordova-plugin-flashlight": "^3.2.0",
+    "cordova-plugin-flashlight": "git+https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-splashscreen": "^5.0.2",
