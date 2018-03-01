@@ -13,6 +13,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     if (window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
+      
+        cordova.plugins.flashlight.switchOn();
+        cordova.plugins.flashlight.switchOff();
+        window.plugins.flashlight.toggle();
 
     }
     if (window.StatusBar) {
@@ -43,9 +47,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   .state('app.browse', {
       url: '/browse',
+       controller: 'TestCtrl',
       views: {
         'menuContent': {
           templateUrl: 'templates/browse.html'
+            
         }
       }
     })
@@ -59,15 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
+  
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/browse');
 });
