@@ -44,20 +44,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
         .state('app.browse', {
         url: '/browse',
-        controller: 'TestCtrl',
+        
         views: {
             'menuContent': {
-                templateUrl: 'templates/browse.html'
+                templateUrl: 'templates/browse.html',
+                controller: 'TestCtrl'
 
             }
         }
     })
         .state('app.vibrate', {
         url: '/vibrate',
-        controller: 'VibrateCtrl',
+       
         views: {
             'menuContent': {
-                templateUrl: 'templates/vibrate.html'
+                templateUrl: 'templates/vibrate.html',
+                 controller: 'VibrateCtrl'
 
             }
         }
