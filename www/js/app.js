@@ -14,10 +14,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
             cordova.plugins.Keyboard.disableScroll(true);
 
-            window.plugins.flashlight.toggle(
-                function() {}, // optional success callback
-                function() {}, // optional error callback
-            );
+
         }
         if (window.StatusBar) {
             // org.apache.cordova.statusbar required
@@ -51,6 +48,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
             'menuContent': {
                 templateUrl: 'templates/browse.html'
+
+            }
+        }
+    })
+        .state('app.vibrate', {
+        url: '/vibrate',
+        controller: 'VibrateCtrl',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/vibrate.html'
 
             }
         }
