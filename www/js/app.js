@@ -64,13 +64,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
-        .state('app.screenshot', {
-        url: '/screenshot',
+        .state('app.camera', {
+        url: '/camera',
        
         views: {
             'menuContent': {
-                templateUrl: 'templates/screenshot.html',
-                 controller: 'ScreenShotCtrl'
+                templateUrl: 'templates/camera.html',
+                 controller: 'CameraCtrl'
 
             }
         }

@@ -24,11 +24,8 @@ angular.module('starter.controllers', [])
 
 })
 
-    .controller('ScreenShotCtrl', function($scope) {
-
+    .controller('CameraCtrl', function($scope, Picture) {
     console.log("init service")
-
-
-    
-
+    $scope.Picture= Picture;
+   
 });

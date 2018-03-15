@@ -85,4 +85,6 @@
     <plugin name="cordova-plugin-flashlight" spec="https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git" />
     <plugin name="cordova-plugin-vibration" spec="^3.0.1" />
     <plugin name="com.darktalker.cordova.screenshot" spec="https://github.com/gitawego/cordova-screenshot.git" />
+    <plugin name="cordova-plugin-shake" spec="https://github.com/leecrossley/cordova-plugin-shake.git" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.2" />
 </widget>
