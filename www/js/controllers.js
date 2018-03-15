@@ -19,8 +19,16 @@ angular.module('starter.controllers', [])
 
 })
     .controller('VibrateCtrl', function($scope ,vibrate) {
+    $scope.vibrate= vibrate;
     console.log("ok");
-    $scope.vibrate = function(ms){
-       vibrate.Vibrate(ms) ;
-    }
+
+})
+
+    .controller('ScreenShotCtrl', function($scope) {
+
+    console.log("init service")
+
+
+    
+
 });

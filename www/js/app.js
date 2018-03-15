@@ -64,6 +64,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
+        .state('app.screenshot', {
+        url: '/screenshot',
+       
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/screenshot.html',
+                 controller: 'ScreenShotCtrl'
+
+            }
+        }
+    })
 
 
 

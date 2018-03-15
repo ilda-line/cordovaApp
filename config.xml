@@ -84,4 +84,5 @@
     <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-flashlight" spec="https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git" />
     <plugin name="cordova-plugin-vibration" spec="^3.0.1" />
+    <plugin name="com.darktalker.cordova.screenshot" spec="https://github.com/gitawego/cordova-screenshot.git" />
 </widget>
