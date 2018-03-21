@@ -5,8 +5,9 @@ angular.module('starter.controllers', [])
 
 })
 
-    .controller('TestCtrl', function($scope) {
-    console.log('init service');
+    .controller('TestCtrl', function($scope, ) {
+//    console.log("init service")
+//    $scope.splashscreen= splashscreen;
 
 
 })
@@ -19,5 +20,5 @@ angular.module('starter.controllers', [])
     .controller('CameraCtrl', function($scope, Picture) {
     console.log("init service")
     $scope.Picture= Picture;
-   
+
 });
