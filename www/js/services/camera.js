@@ -8,7 +8,8 @@ angular.module('starter.controllers')
 
         function onSuccess(imageURI) {
             var image = document.getElementById('myImage');
-            image.style.backgroundImage = "url("+imageURI+")";
+             image.src = imageURI;
+             image.style.backgroundImage = "url("+image.src+")";
         }
 
         function onFail(message) {

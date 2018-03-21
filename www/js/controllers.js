@@ -8,14 +8,6 @@ angular.module('starter.controllers', [])
     .controller('TestCtrl', function($scope) {
     console.log('init service');
 
-    $scope.lightOn = function(){
-        alert("Light ON");
-
-    };
-    $scope.lightOff = function(){
-        alert("Light Off");
-
-    };
 
 })
     .controller('VibrateCtrl', function($scope ,vibrate) {
