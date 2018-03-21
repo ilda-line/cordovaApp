@@ -4,12 +4,13 @@ angular.module('starter.controllers')
     this.TakePicture = function (){
 
         navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-                                                        destinationType: Camera.DestinationType.FILE_URI});
+                                                        destinationType: Camera.DestinationType.DATA_URL});
 
-        function onSuccess(imageURI) {
+        function onSuccess(imageData) {
             var image = document.getElementById('myImage');
             image.style.display = 'block';
-            image.src = imageURI;
+            image.src = "data:image/jpeg;base64," + imageData;
+            
            
         }
 
